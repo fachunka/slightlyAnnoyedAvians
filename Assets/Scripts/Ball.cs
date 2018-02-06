@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class Ball : MonoBehaviour {
@@ -15,7 +16,7 @@ public class Ball : MonoBehaviour {
 	void Start ()
 	{
 		count = 0;
-		SetCountText ();
+		countText.text = "Swine Killed: " + count.ToString ();
 
 	}
 		
